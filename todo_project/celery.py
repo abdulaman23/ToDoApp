@@ -1,5 +1,5 @@
 import os 
-from todo_project.celery import Celery
+from celery import Celery
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'todo_project.settings')    
 
 app = Celery('todo_project')
